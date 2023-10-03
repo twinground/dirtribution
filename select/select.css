@@ -1,0 +1,63 @@
+.exhibition_section {
+  padding: 10rem;
+
+  @media (min-width: 0px) and (max-width: 800px) {
+    padding: 2rem;
+  }
+}
+
+.main_title {
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+
+.explain {
+  margin-bottom: 1rem;
+}
+
+#exhibitions {
+  display: flex;
+  flex-wrap: wrap; /* 자식 요소들이 감싸질 수 있도록 설정 */
+  justify-content: space-between; /* 좌우 여백을 벌리기 위해 */
+
+  /* 미디어 쿼리: 브라우저 창 최소일 때 */
+  @media (max-width: 600px) {
+    justify-content: center; /* 가운데 정렬로 변경 */
+  }
+}
+
+.item_container {
+  margin: 0.5rem 0.2rem 3rem 0.2rem; /* 가로 간격을 10px로 설정 */
+  cursor: pointer;
+
+  /* 브라우저 창 최대 column = 5 */
+  @media (min-width: 1201px) and (max-width: 100vw) {
+    width: calc(20% - 10px);
+  }
+
+  /* 미디어 쿼리: 브라우저 창 최소일 때 column = 2 */
+  @media (min-width: 0px) and (max-width: 1200px) {
+    width: calc(50% - 10px);
+  }
+}
+
+.item_img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: 0.1rem solid gray;
+  box-sizing: border-box;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.item_text_1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.item_text_2 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
