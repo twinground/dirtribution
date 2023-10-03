@@ -1,0 +1,129 @@
+@import "reset.css";
+@import "/select/select.css";
+
+main {
+  display: flex;
+  flex-direction: column; /* 컴포넌트를 세로로 배치 */
+}
+
+nav {
+  /* navigation background */
+  width: 100%;
+  height: 120px;
+
+  background: #2e94b9;
+  border-radius: 0px 0px 0px 30px;
+
+  display: flex;
+  justify-content: space-between; /* 수평으로 양끝에 배치 */
+  align-items: center; /* 수직으로 중앙에 배치 */
+}
+
+#nav_button_wrapper {
+  display: flex;
+  margin-right: 6rem;
+  gap: 2rem; /* 버튼 사이의 간격 설정 */
+}
+
+.nav_button_a_container {
+  border-radius: 2rem;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.nav_button_a_container:hover,
+.nav_button_a_container:active {
+  background-color: rgba(93, 180, 212, 0.5);
+  transition: all 0.2s;
+}
+
+.nav_button {
+  /* 이벤트 둘러보기 */
+  width: 100%;
+  height: 100%;
+  display: inline;
+  padding: 1rem 2rem;
+  font-family: "KoHo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+#logo {
+  height: 100%;
+}
+
+.logo_container {
+  display: inline-block;
+  height: 40%;
+  margin-left: 4rem;
+}
+
+h1 {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 7rem;
+  letter-spacing: -0.05em;
+  color: #000000;
+}
+
+h2 {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #475053;
+}
+
+.section_container {
+  display: flex;
+}
+
+.section_1,
+.section_2 {
+  flex: 1;
+  padding: 2rem;
+}
+
+.section_1 {
+  padding: 20rem 0rem 10rem 20rem;
+}
+
+.section_2 {
+  padding-bottom: 120rem;
+}
+
+#main_button_container {
+  display: flex;
+  gap: 3rem;
+}
+
+.main_button_a_container {
+  display: inline-flex;
+
+  background-color: #acdcee;
+  border-radius: 20px;
+  margin-top: 2rem;
+  /* EW 알아보기 */
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 43px;
+}
+
+.main_button {
+  padding: 0.2rem 2rem 0.2rem 2rem;
+  color: #475053;
+}
+
+.footer_hr {
+  background-color: #475053;
+  width: 100%;
+  height: 0.5px;
+}
