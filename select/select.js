@@ -3,7 +3,7 @@ loaded_exhibition = [
     "../asset/캡스톤 멘토링.jpeg",
     "캡스톤 멘토링 첫날!",
     "식사 후 카페에서 멘토링 진행중!!",
-    "exhibition/exhibition.html",
+    "dist/index.html",
   ],
   ["img_source", "text1", "text2", "dist/index.html"],
   ["img_source", "text1", "text2", "link"],
