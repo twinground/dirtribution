@@ -30,7 +30,7 @@ authBtnContent.addEventListener("click", function () {
     localStorage.removeItem("refreshToken");
     location.reload(true);
   } else {
-    window.location.href = "auth/auth.html";
+    window.location.href = "../auth/auth.html";
   }
 });
 
