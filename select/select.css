@@ -18,7 +18,7 @@
 #exhibitions {
   display: flex;
   flex-wrap: wrap; /* 자식 요소들이 감싸질 수 있도록 설정 */
-  justify-content: space-between; /* 좌우 여백을 벌리기 위해 */
+  justify-content: flex-start; /* 좌우 여백을 벌리기 위해 */
 
   /* 미디어 쿼리: 브라우저 창 최소일 때 */
   @media (max-width: 600px) {

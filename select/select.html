@@ -4,17 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="select.js" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async></script>
     <link rel="stylesheet" href="../index.css" />
     <title>select_page</title>
   </head>
   <body>
     <nav>
+      <!-- <div
+        id="g_id_onload"
+        data-client_id="996009238851-jdtokd2mr10kp8pk2nfelanegn78cvj1.apps.googleusercontent.com"
+        data-login_uri="http://mgmg.o-r.kr:8080/ouath2/authorization/google"
+        data-auto_prompt="false"
+      ></div> -->
+      <!-- <div
+        class="g_id_signin"
+        data-type="standard"
+        data-size="large"
+        data-theme="outline"
+        data-text="sign_in_with"
+        data-shape="rectangular"
+        data-logo_alignment="left"
+      ></div> -->
       <a class="logo_container" href="../index.html">
         <img id="logo" src="../asset/logo.svg" />
       </a>
       <div id="nav_button_wrapper">
-        <div class="nav_button_a_container">
-          <a href="select/select.html" class="nav_button">로그인</a>
+        <div class="nav_button_a_container" id="auth_btn">
+          <!-- <a href="/auth/auth.html" class="nav_button">로그인</a> -->
         </div>
       </div>
     </nav>

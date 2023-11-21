@@ -8,50 +8,76 @@
     <title>main_page</title>
   </head>
   <body>
-    <nav>
-      <a class="logo_container" href="index.html">
-        <img id="logo" src="asset/logo.svg" />
-      </a>
-      <div id="nav_button_wrapper">
-        <div class="nav_button_a_container">
-          <a href="select/select.html" class="nav_button">이벤트 둘러보기</a>
-        </div>
-        <div class="nav_button_a_container">
-          <a href="select/select.html" class="nav_button">로그인</a>
-        </div>
-      </div>
-    </nav>
-    <main>
-      <div class="section_container">
-        <section class="section_1">
-          <h1>
-            Make your demo<br />
-            Interactive
-          </h1>
-          <h2>
-            에브리웨어는 사용자가 언제 어디서든 웹 브라우저를 통해<br />
-            소프트웨어를 체험해볼 수 있도록 도와줍니다.<br />
-            온라인 소프트웨어 데모에 최적화된 서비스를 체험해 보세요.
-          </h2>
-          <div id="main_button_container">
-            <div class="main_button_a_container">
-              <a class="main_button" href="select/select.html"
-                >전시회 들여다보기</a
-              >
-            </div>
-            <div class="main_button_a_container">
-              <a class="main_button" href="#">일단 더미데이터</a>
-            </div>
+    <div id="body-wrapper">
+      <nav>
+        <a class="logo_container" href="index.html">
+          <img id="logo" src="asset/logo.svg" />
+        </a>
+        <div id="nav_button_wrapper">
+          <div class="nav_button_a_container">
+            <a href="select/select.html" class="nav_button">이벤트 둘러보기</a>
           </div>
-        </section>
-        <section class="section_2">
-          <div>일단 여기는 더미데이터</div>
-        </section>
+          <div class="nav_button_a_container" id="auth_btn">
+            <!--<a href="auth/auth.html" class="nav_button">로그인</a> -->
+          </div>
+        </div>
+      </nav>
+      <div id="body-content">
+        <main>
+          <div class="section_container">
+            <section class="section_1">
+              <div class="section_1_wrapper">
+                <h1>
+                  Make your demo<br />
+                  Interactive
+                </h1>
+                <h2>
+                  에브리웨어는 사용자가 언제 어디서든 웹 브라우저를 통해<br />
+                  소프트웨어를 체험해볼 수 있도록 도와줍니다.<br />
+                  온라인 소프트웨어 데모에 최적화된 서비스를 체험해 보세요.
+                </h2>
+                <div id="main_button_container">
+                  <div class="main_button_a_container">
+                    <a class="main_button" href="select/select.html"
+                      >전시회 들여다보기</a
+                    >
+                  </div>
+                  <div class="main_button_a_container">
+                    <a class="main_button" href="#">일단 더미데이터</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="section_2">
+              <div class="crs">
+                <div class="bg-wrapper-container">
+                  <div class="background-wrapper">
+                    <img
+                      src="asset/캡스톤 멘토링.jpeg"
+                      class="background"
+                    />
+                    <img src="asset/crs_img1.png" class="background" />
+                    <img src="asset/crs_img2.png" class="background" />
+                    <img src="asset/crs_img3.png" class="background" />
+                  </div>
+                </div>
+                <div class="crs-btn crs-btn-next">
+                  <img class="crs-img" src="asset/arrow_next.png" alt="" />
+                </div>
+                <div class="crs-btn crs-btn-prev">
+                  <img class="crs-img" src="asset/arrow_prev.png" alt="" />
+                </div>
+              </div>
+            </section>
+          </div>
+          <div id="blank"></div>
+        </main>
       </div>
-    </main>
-    <hr class="footer_hr" />
-    <footer>
-      <h2>푸터 더미데이터</h2>
-    </footer>
+
+      <footer>
+        <hr class="footer_hr" />
+        <h2>푸터 더미데이터</h2>
+      </footer>
+    </div>
   </body>
 </html>
