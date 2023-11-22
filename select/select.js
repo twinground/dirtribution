@@ -35,7 +35,7 @@ authBtnContent.addEventListener("click", function () {
 });
 
 const expoPageURL = [
-  "distribution/index.html",
+  "dist/index.html",
   "1",
   "1",
   "1",
