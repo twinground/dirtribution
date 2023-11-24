@@ -1,4 +1,4 @@
-const baseUrl = `wss://everyware.site`;
+const baseUrl = `http://13.124.153.160:8080`;
 const expoEndpoint = "/api/expos";
 
 let _accessToken = null;
