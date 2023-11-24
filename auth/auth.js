@@ -11,6 +11,7 @@ if (localStorage.getItem("accessToken") != null) {
   window.location.href = "../index.html";
 }
 
+// const baseUrl = `https://everyware.site`;
 const baseUrl = `http://13.124.153.160:8080`;
 const loginEndpoint = `${baseUrl}/login`;
 const signUpEndpoint = `${baseUrl}/sign-up`;
