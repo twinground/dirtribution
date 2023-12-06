@@ -4,7 +4,7 @@ let _refreshToken = null;
 let isLoged = false;
 if (localStorage.getItem("accessToken") != null) {
   _accessToken = localStorage.getItem("accessToken");
-  _nickName = localStorage.getItem("nickName");
+  _nickName = localStorage.getItem("nickname");
   _refreshToken = localStorage.getItem("refreshToken");
   isLoged = true;
   alert("이미 로그인 되어있습니다.");
@@ -70,7 +70,7 @@ function SignIn() {
           _nickName = Response.data.data.nickName;
           // 토큰을 로컬 스토리지에 저장
           localStorage.setItem("accessToken", _accessToken);
-          localStorage.setItem("nickName", _nickName);
+          localStorage.setItem("nickname", _nickName);
           localStorage.setItem("refreshToken", _refreshToken);
 
           window.location.href = "../index.html";

@@ -8,7 +8,7 @@ let _refreshToken = null;
 let isLoged = false;
 if (localStorage.getItem("accessToken") != null) {
   _accessToken = localStorage.getItem("accessToken");
-  _nickName = localStorage.getItem("nickName");
+  _nickName = localStorage.getItem("nickname");
   _refreshToken = localStorage.getItem("refreshToken");
   isLoged = true;
 }
@@ -27,7 +27,7 @@ authBtnContent.addEventListener("click", function () {
   if (isLoged) {
     // 링크가 존재하면 해당 URL로 이동합니다.
     localStorage.removeItem("accessToken");
-    localStorage.removeItem("nickName");
+    localStorage.removeItem("nickname");
     localStorage.removeItem("refreshToken");
     location.reload(true);
   } else {
