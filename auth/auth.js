@@ -67,7 +67,7 @@ function SignIn() {
           _accessToken = Response.data.data.tokenInfo.accessToken;
           _refreshToken = Response.data.data.tokenInfo.refreshToken;
           //Response.data.data.tokenInfo.refreshTokenExpirationTime;
-          _nickName = Response.data.data.nickname;
+          _nickName = Response.data.data.nickName;
           // 토큰을 로컬 스토리지에 저장
           localStorage.setItem("accessToken", _accessToken);
           localStorage.setItem("nickName", _nickName);
